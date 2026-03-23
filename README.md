@@ -1,4 +1,4 @@
-*trojan.js.yoareanidiot*
+*trojan.js.youareanidiot*
 
 
 youareanidiot and lol
