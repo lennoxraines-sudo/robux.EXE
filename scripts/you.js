@@ -136,7 +136,6 @@ window.onkeydown = function() {
 	return null;
 }
 
-window.onbeforeunload = function() {
-    return "Are you an idiot?";
+
 };
 /* [Oct 2021] End of amendments. */
